@@ -1,0 +1,1 @@
+cat /etc/passwd | sort -k 3 -t ':' -nr | head -n 201 | tail -n 1 | cut -d ':' -f 4 | xargs -I{} grep {} /etc/passwd | awk -F ":" '{print $5 " " $6}' | tr ',' ' ' | awk '{print $1 " " $2 ":" $NF}'

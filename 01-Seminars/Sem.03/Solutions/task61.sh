@@ -1,0 +1,1 @@
+ps -e -o user= | grep -Fvf <(who | cut -d ' ' -f 1 | sort -u) | sort | uniq

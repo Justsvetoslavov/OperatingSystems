@@ -1,0 +1,1 @@
+cat f | tr '[A-Z]' '[a-z]' > file3

@@ -1,0 +1,1 @@
+find /tmp -type f -readable 2>/dev/null -printf "%m %f\n"

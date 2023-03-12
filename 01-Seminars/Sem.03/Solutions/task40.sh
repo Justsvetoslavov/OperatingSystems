@@ -1,0 +1,1 @@
+find ~ -type f -mmin -15 ! -name ".*" -printf "%p %T@\n" > eternity

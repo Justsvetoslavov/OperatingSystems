@@ -1,0 +1,3 @@
+cat spacex.txt | grep -E $(tail -n +2 spacex.txt| cut -d '|' -f 2,3 | tr '|' ' ' | sort -k 1 | uniq -c | awk -F ' ' '{if($3=="Failure") print $1 " " $2}' | sort -k 1 -nr | cut -d ' ' -f 2 | head -n 1) | sort -t '|' -k 1 -nr | uniq | awk -F '|' '{print $3 ":" $4}' | head -n 1
+#or
+egrep $(grep "Failure" spacex.txt | cut -d '|' -f 2 | sort | uniq -c | head -n 1 | tr -s ' ' | sed 's/ //' | cut -d ' ' -f 2) spacex.txt | sort -nr -t '|' -k 1 | head -n 1 | cut -d '|' -f 3,4 | tr '|' ' '

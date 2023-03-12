@@ -1,0 +1,1 @@
+find songs -iname '*.ogg' | tr A-Z a-z | tr ' ' '_' | cut -d '/' -f 2 | sort

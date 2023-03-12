@@ -1,0 +1,1 @@
+find / -type f -user $(whoami) -regextype egrep -regex '^.*\.blend[0-9]+$' 2>/dev/null

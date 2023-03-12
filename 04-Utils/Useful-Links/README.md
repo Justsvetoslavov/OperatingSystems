@@ -1,0 +1,4 @@
+- Bash Manual: https://www.gnu.org/software/bash/manual/bash.html#Conditional-Constructs
+- Velin repo: https://github.com/avelin/fmi-os
+- Tsvetelin repo: https://github.com/Tsvetilin/Operating-Systems
+- Andy repo: https://github.com/andy489/Linux_Shell

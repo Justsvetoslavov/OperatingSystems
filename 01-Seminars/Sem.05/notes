@@ -1,0 +1,29 @@
+// Add to README.md
+
+Compile C:
+
+gcc -Werror -Wall -Wextra - wpendantic foo.c
+
+1) Makefile
+
+2) xxd
+
+3) Big & Little endian
+LSB = least significant byte - Little endian
+
+4) malloc & free (wrapper of system calls)
+Оправляват динамичната памет
+
+6) two complement
+
+11) find C function to create and unlike temporary file
+
+13) exec
+- execl
+- execlp
+
+14) fork, wait
+
+15) getpid
+
+16) pipes and FIFO, mkfifo, dup, dup2

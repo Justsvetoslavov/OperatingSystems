@@ -1,0 +1,2 @@
+cp /srv/fmi-os/exercises/data/ssa-input.txt ~
+cat ssa-input.txt | awk '{if ($1=="Array") array = $2} {if ($1=="physicaldrive") drive = $2} {if ($2=="Temperature" && $1=="Current") ct = $4;} {if  ($2=="Temperature" && $1=="Maximum") {mt = $4; printf "%s-%s %s %s",array,drive,ct,mt; printf"\n"}}'

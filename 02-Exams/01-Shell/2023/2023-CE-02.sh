@@ -1,0 +1,1 @@
+find /var/log/my_logs -type f -regextype egrep -regex "^.*/[_a-zA-Z0-9]+_[0-9]+\.log$" | xargs -I {} egrep "\berror\b" {} | wc -l

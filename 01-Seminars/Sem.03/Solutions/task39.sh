@@ -1,0 +1,1 @@
+cat /etc/passwd | cut -d ':' -f4 | sort -n | uniq -c | sort -nr | head -n 5 | awk '{print $2}' | xargs -I{} getent group {} | cut -d ':' -f1

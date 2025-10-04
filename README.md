@@ -63,7 +63,7 @@ Support and helper resources:
 Use these for fast lookups while scripting or coding in C.
 
 ---
-## Quick Reference (Bash)
+## Quick Reference
 | Topic | Where to Start |
 |-------|----------------|
 | Variables & Expansion | `Sem.04/README.md` (Variables section) |
